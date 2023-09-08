@@ -45,7 +45,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const clearCartButton = document.getElementById("clear-cart");
 
   let cartVisible = false;
-  let cart = [];
 
   function loadCartFromLocalStorage() {
     const cartData = localStorage.getItem("cart");
