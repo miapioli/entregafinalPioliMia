@@ -70,6 +70,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   let cartItems = document.getElementById("cart-items");
+  let cart = [];
 
   function updateCart() {
     cartItems.innerHTML = "";
