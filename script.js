@@ -47,7 +47,6 @@ document.addEventListener("DOMContentLoaded", () => {
   let cartVisible = false;
   let cart = [];
 
-  // Función para cargar el carrito desde el localStorage al cargar la página
   function loadCartFromLocalStorage() {
     const cartData = localStorage.getItem("cart");
     if (cartData) {
@@ -56,7 +55,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  // Función para guardar el carrito en el localStorage
   function saveCartToLocalStorage() {
     localStorage.setItem("cart", JSON.stringify(cart));
   }
@@ -83,7 +81,6 @@ document.addEventListener("DOMContentLoaded", () => {
       cartItems.appendChild(cartItem);
     });
 
-    // Llamamos a la función para guardar el carrito en el localStorage
     saveCartToLocalStorage();
   }
 
@@ -176,10 +173,8 @@ document.addEventListener("DOMContentLoaded", () => {
     updateCart();
   });
 
-  // Llamamos a la función para cargar el carrito desde el localStorage al cargar la página
   loadCartFromLocalStorage();
 
-  // Llamamos a la función para cargar los productos
   loadProducts();
 });
 
