@@ -45,6 +45,21 @@ document.addEventListener("DOMContentLoaded", () => {
   const clearCartButton = document.getElementById("clear-cart");
 
   let cartVisible = false;
+  let cart = [];
+
+  // Función para cargar el carrito desde el localStorage al cargar la página
+  function loadCartFromLocalStorage() {
+    const cartData = localStorage.getItem("cart");
+    if (cartData) {
+      cart = JSON.parse(cartData);
+      updateCart();
+    }
+  }
+
+  // Función para guardar el carrito en el localStorage
+  function saveCartToLocalStorage() {
+    localStorage.setItem("cart", JSON.stringify(cart));
+  }
 
   toggleCartButton.addEventListener("click", () => {
     cartVisible = !cartVisible;
@@ -57,7 +72,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   let cartItems = document.getElementById("cart-items");
-  let cart = [];
 
   function updateCart() {
     cartItems.innerHTML = "";
@@ -68,6 +82,9 @@ document.addEventListener("DOMContentLoaded", () => {
       cartItem.textContent = `${product.nombre} - $${product.precio}`;
       cartItems.appendChild(cartItem);
     });
+
+    // Llamamos a la función para guardar el carrito en el localStorage
+    saveCartToLocalStorage();
   }
 
   async function loadProducts() {
@@ -159,6 +176,10 @@ document.addEventListener("DOMContentLoaded", () => {
     updateCart();
   });
 
+  // Llamamos a la función para cargar el carrito desde el localStorage al cargar la página
+  loadCartFromLocalStorage();
+
+  // Llamamos a la función para cargar los productos
   loadProducts();
 });
 
