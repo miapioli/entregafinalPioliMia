@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="icon" href="img/uwu.ico" type="image/x-icon" />
+
+    <title>La pelu manga</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-large">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#product-section">Productos</a></li>
+        <li><a href="#contact-form">Contacto</a></li>
+      </ul>
+      <button id="modoOscuro">Modo Oscuro</button>
+    </nav>
+    <!-- Slider main container -->
+    <div class="swiper" id="main-content">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div
+          class="swiper-slide"
+          style="background-image: url(img/carrito1.jpg)"
+        ></div>
+        <div
+          class="swiper-slide"
+          style="background-image: url(img/carrito2.jpg)"
+        ></div>
+        <div
+          class="swiper-slide"
+          style="background-image: url(img/carrito3.jpg)"
+        ></div>
+        ...
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+      <!-- If we need scrollbar -->
+      <div class="swiper-scrollbar"></div>
+    </div>
+    <section id="product-section">
+      <header>
+        <h1>Tienda de Productos</h1>
+      </header>
+      <div class="container">
+        <div class="filter-bar">
+          <label for="sort-select">Ordenar por:</label>
+          <select id="sort-select">
+            <option value="asc">A-Z</option>
+            <option value="desc">Z-A</option>
+          </select>
+          <input type="checkbox" id="offer-checkbox" />
+          <label for="offer-checkbox">Mostrar ofertas</label>
+
+          <button id="search-button">Buscar</button>
+        </div>
+        <div class="product-list" id="product-list"></div>
+      </div>
+    </section>
+    <section class="contact-section" id="contact-form">
+      <h2>Contacto</h2>
+      <form id="contact-form">
+        <div class="form-group">
+          <label for="name">Nombre:</label>
+          <input type="text" id="name" name="name" required minlength="3" />
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="message">Mensaje:</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+        <button type="submit">Enviar</button>
+      </form>
+      <div id="message-container"></div>
+    </section>
+    <button id="toggle-cart-button">
+      <img src="img/carritodecompras.jpg" alt="Carrito de Compras" />
+    </button>
+    <div class="cart">
+      <h2>Carrito de Compras</h2>
+      <div id="cart-items" class="cart-items"></div>
+      <button id="clear-cart">Vaciar Carrito</button>
+    </div>
+    <div class="notification" id="notification">
+      Asuka dice: Baka! Se ha agregado con éxito su producto uwu
+    </div>
+
+    <footer>
+      <div class="contact-info">
+        <p>Dirección: 123 Calle Falsa</p>
+        <p>Teléfono: 555-123-4567</p>
+        <p>Email: info@example.com</p>
+      </div>
+      <div class="social-links">
+        <a
+          href="https://cdn.discordapp.com/attachments/848782046288543784/1149568459110367242/asukita.jpg"
+          ><i class="fab fa-facebook blue-icon"></i
+        ></a>
+        <a
+          href="https://cdn.discordapp.com/attachments/848782046288543784/1149568459110367242/asukita.jpg"
+          ><i class="fab fa-twitter blue-icon"></i
+        ></a>
+        <a
+          href="https://cdn.discordapp.com/attachments/848782046288543784/1149568459110367242/asukita.jpg"
+          ><i class="fab fa-instagram blue-icon"></i
+        ></a>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

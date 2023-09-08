@@ -1,0 +1,122 @@
+{
+  "anime": [
+    {
+      "id": 1,
+      "nombre": "Naruto",
+      "genero": "Acción",
+      "precio": 19.99,
+      "oferta": true,
+      "imagen": "https://http2.mlstatic.com/D_NQ_NP_906066-MLA45615959562_042021-O.webp"
+    },
+    {
+      "id": 2,
+      "nombre": "One Piece",
+      "genero": "Aventura",
+      "precio": 24.99,
+      "oferta": true,
+      "imagen": "https://tanoshii.pe/wp-content/uploads/2022/04/PIECE-5.jpg"
+    },
+    {
+      "id": 3,
+      "nombre": "Attack on Titan",
+      "genero": "Acción",
+      "precio": 21.99,
+      "oferta": false,
+      "imagen": "https://target.scene7.com/is/image/Target/GUEST_ee65892a-feb3-4d8f-afd3-a5c3327d822d"
+    },
+    {
+      "id": 4,
+      "nombre": "Death Note",
+      "genero": "Misterio",
+      "precio": 18.99,
+      "imagen": "https://i.ebayimg.com/images/g/rqIAAOSw6rRkEKXA/s-l1200.webp"
+    },
+    {
+      "id": 5,
+      "nombre": "My Hero Academia",
+      "genero": "Acción",
+      "precio": 22.99,
+      "oferta": false,
+      "imagen": false
+    },
+    {
+      "id": 6,
+      "nombre": "Fullmetal Alchemist: Brotherhood",
+      "genero": "Aventura",
+      "precio": 25.99,
+      "oferta": false,
+      "imagen": "https://acdn.mitiendanube.com/stores/399/159/products/fullmetal-alchemist-tienda1-2f6f750b136abf88fc16778895474645-640-0.jpg"
+    },
+    {
+      "id": 7,
+      "nombre": "Neon Genesis Evangelion",
+      "genero": "Ciencia Ficción",
+      "precio": 20.99,
+      "oferta": false,
+      "imagen": "https://acdn.mitiendanube.com/stores/399/159/products/evangeliondeluxe_131-0af134a01a42bd8e3815682243644402-640-0.jpg"
+    },
+    {
+      "id": 8,
+      "nombre": "Dragon Ball Z",
+      "genero": "Acción",
+      "precio": 23.99,
+      "imagen": "https://i0.wp.com/www.lacasadeel.net/wp-content/uploads/2022/11/Dragon-Ball-Super-manga.webp?resize=700%2C706"
+    },
+    {
+      "id": 9,
+      "nombre": "Sword Art Online",
+      "genero": "Aventura",
+      "precio": 26.99,
+      "oferta": false,
+      "imagen": "https://ss365.liverpool.com.mx/xl/1097514255.jpg"
+    },
+    {
+      "id": 10,
+      "nombre": "Steins;Gate",
+      "genero": "Ciencia Ficción",
+      "precio": 21.99,
+      "oferta": true,
+      "imagen": false
+    },
+    {
+      "id": 11,
+      "nombre": "Cowboy Bebop",
+      "genero": "Aventura",
+      "precio": 19.99,
+      "oferta": true,
+      "imagen": "https://i.ebayimg.com/images/g/eEUAAOSwYIJi4BYx/s-l1200.webp"
+    },
+    {
+      "id": 12,
+      "nombre": "Hunter x Hunter",
+      "genero": "Acción",
+      "precio": 22.99,
+      "oferta": true,
+      "imagen": "https://m.media-amazon.com/images/I/815uHbvvu1L._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+      "id": 13,
+      "nombre": "One Punch Man",
+      "genero": "Acción",
+      "precio": 24.99,
+      "oferta": true,
+      "imagen": false
+    },
+    {
+      "id": 14,
+      "nombre": "Tokyo Ghoul",
+      "genero": "Misterio",
+      "precio": 18.99,
+      "oferta": true,
+      "imagen": "https://acdn.mitiendanube.com/stores/399/159/products/tokyo-ghoul-tienda1-2170289af9342115df16783166484854-480-0.jpg"
+    },
+    {
+      "id": 15,
+      "nombre": "Demon Slayer",
+      "genero": "Acción",
+      "precio": 20.99,
+      "oferta": true,
+      "imagen": "https://acdn.mitiendanube.com/stores/399/159/products/demon-slayer-tienda1-08178f59e0e0a2540816778001778011-640-0.jpg"
+    }
+  ]
+}
